@@ -10,8 +10,8 @@ buildscript {
         maven { url 'https://jitpack.io' }
         maven { url 'https://maven.fabric.io/public' }
 
-        // realm beta
-        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+        // realm
+        jcenter()
     }
 
     dependencies {
@@ -20,7 +20,7 @@ buildscript {
         classpath plugin.kotlinGradle
         classpath plugin.kotlinApt
 //        classpath plugin.realm
-        classpath plugin.realmBeta
+        classpath "io.realm:realm-gradle-plugin:7.0.0"
         classpath plugin.kotlinDokka
         classpath plugin.fabric
         classpath plugin.imgOptimizer
@@ -49,7 +49,7 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
 
         // realm beta
-        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+        jcenter()
     }
 }
 
