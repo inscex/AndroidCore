@@ -122,7 +122,7 @@ dependencies {
     implementation libs.deviceInfo
     implementation libs.timeBomb
     implementation libs.googlePlayForceUpdate
-    implementation libs.logger
+    implementation 'com.github.kibotu:StreamingAndroidLogger:4.4.4'
     api libs.resourceExtensions
 
     implementation libs.androidAnimationsActions
